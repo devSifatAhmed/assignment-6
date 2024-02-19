@@ -1,0 +1,64 @@
+<!doctype html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AI Universe Hub</title>
+    <!-- All Cdn File Here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header starts-->
+    <header class="container mx-auto px-4 text-center mt-6">
+        <h1 class="text-3xl font-bold mt-6">
+            AI Universe Hub
+        </h1>
+        <button id="sortDataBtn" onclick="sortBtn()"
+            class="btn btn-active text-white font-bold text-md bg-[#EB5757] mt-7">Sort By
+            Date</button>
+    </header>
+    <!-- Header starts-->
+
+    <!-- Main section starts -->
+    <section class="container mx-auto px-4 mt-12">
+        <!-- loader spinner starts -->
+        <div id="spinner" class="text-center hidden">
+            <span class="loading loading-dots loading-lg"></span>
+        </div>
+        <!-- loader spinner end -->
+
+        <div id="showDataContainer" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        </div>
+
+        <!-- show more button -->
+        <div id="showMoreBtn" class="text-center my-5 hidden">
+            <button onclick="showMore()" class="btn btn-active text-white font-bold bg-[#EB5757] mt-7">Show
+                More</button>
+        </div>
+    </section>
+    <!-- Main section ends -->
+
+    <!-- modal section start -->
+    <section>
+        <div>
+            <dialog id="my_modal_4" class="modal">
+
+
+            </dialog>
+        </div>
+    </section>
+    <!-- modal section end -->
+
+    <!-- All js file here -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
